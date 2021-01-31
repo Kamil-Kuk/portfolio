@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import {HomeComponent} from './component/home/home.component';
 import {AboutComponent} from './component/about/about.component';
-import {PostComponent} from './component/post/post.component';
 import {PageNotFoundComponent} from './component/page-not-found/page-not-found.component';
 import {PostListComponent} from './component/post-list/post-list.component';
 
