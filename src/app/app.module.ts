@@ -9,6 +9,8 @@ import { PostItemComponent } from './component/post-item/post-item.component';
 import { PageNotFoundComponent } from './component/page-not-found/page-not-found.component';
 import { PostListComponent } from './component/post-list/post-list.component';
 import {HttpClientModule} from '@angular/common/http';
+import { WeatherComponent } from './component/weather/weather.component';
+import {ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,11 +19,13 @@ import {HttpClientModule} from '@angular/common/http';
     AboutComponent,
     PostItemComponent,
     PageNotFoundComponent,
-    PostListComponent
+    PostListComponent,
+    WeatherComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
+    ReactiveFormsModule,
     AppRoutingModule
   ],
   providers: [],

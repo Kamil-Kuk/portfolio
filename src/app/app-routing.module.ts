@@ -4,6 +4,7 @@ import {HomeComponent} from './component/home/home.component';
 import {AboutComponent} from './component/about/about.component';
 import {PageNotFoundComponent} from './component/page-not-found/page-not-found.component';
 import {PostListComponent} from './component/post-list/post-list.component';
+import {WeatherComponent} from './component/weather/weather.component';
 
 const routes: Routes = [
   {
@@ -19,6 +20,10 @@ const routes: Routes = [
   path: 'about',
   component: AboutComponent
 },
+  {
+    path: 'weather',
+    component: WeatherComponent
+  },
   {
     path: 'posts',
     component: PostListComponent

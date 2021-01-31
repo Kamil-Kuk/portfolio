@@ -1,0 +1,9 @@
+<form [formGroup]="weatherForm" (ngSubmit)="onSubmit()">
+  <label>
+    City Name:
+    <input type="text" formControlName="cityName">
+  </label>
+  <button type="submit">Check weather</button>
+</form>
+
+Temp: {{temp}}
