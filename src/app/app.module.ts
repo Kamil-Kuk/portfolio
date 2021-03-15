@@ -11,6 +11,7 @@ import { PostListComponent } from './component/post-list/post-list.component';
 import {HttpClientModule} from '@angular/common/http';
 import { WeatherComponent } from './component/weather/weather.component';
 import {ReactiveFormsModule} from '@angular/forms';
+import { AboutEmployeeComponent } from './component/about-employee/about-employee.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import {ReactiveFormsModule} from '@angular/forms';
     PostItemComponent,
     PageNotFoundComponent,
     PostListComponent,
-    WeatherComponent
+    WeatherComponent,
+    AboutEmployeeComponent
   ],
   imports: [
     BrowserModule,

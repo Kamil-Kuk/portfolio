@@ -4,8 +4,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" [routerLink]="['/']">
-    <img src="assets/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-    Bootstrap
+    <div class="font-weight-light"><b>Kamil Kukowski</b> Junior Backend Developer</div>
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -20,7 +19,7 @@
         <a class="nav-link" [routerLink]="['/','about']">About</a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" [routerLink]="['/','posts']">Posts</a>
+        <a class="nav-link" [routerLink]="['/','posts']">PostApp</a>
       </li>
       <li class="nav-item active">
         <a class="nav-link" [routerLink]="['/','weather']">Weather</a>
@@ -34,4 +33,8 @@
   <router-outlet></router-outlet>
 </div>
 
-<small>Enviroment: {{env}}</small>
+
+  <div class="fixed-bottom">
+    <small>Enviroment: {{env}}</small>
+  </div>
+

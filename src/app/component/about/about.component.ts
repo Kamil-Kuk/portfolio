@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {PostsService} from '../../service/posts.service';
+import {AboutService} from '../../service/about.service';
+import {Employee} from '../../model/employee.model';
 
 @Component({
   selector: 'app-about',
@@ -7,9 +10,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
-  constructor() { }
+  public employees: Employee[] = [];
+  constructor(
+    private aboutService: AboutService
+  ) { }
 
   ngOnInit(): void {
+    this.aboutService.getAboutInfo().subscribe((users) => {
+      this.employees = users;
+    });
   }
 
 }
