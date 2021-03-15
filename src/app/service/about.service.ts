@@ -5,7 +5,7 @@ import {Post} from '../model/post.model';
 import {Observable} from 'rxjs';
 import {Employee} from '../model/employee.model';
 
-const POST_ENDPOINT = '/users';
+const POST_ENDPOINT = '/repos';
 
 @Injectable({
   providedIn: 'root'

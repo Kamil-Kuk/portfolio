@@ -4,7 +4,7 @@ import {Post} from '../model/post.model';
 import {HttpClient} from '@angular/common/http';
 import {environment} from '../../environments/environment';
 
-const POST_ENDPOINT = '/posts';
+const POST_ENDPOINT = '/repos';
 
 @Injectable({
   providedIn: 'root'
